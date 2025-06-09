@@ -1,0 +1,326 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Auto Spares</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="./script.js"></script>
+<body>
+    <!-- Header Section -->
+<header class="bg-navy text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Universal Auto Spares</a>
+            <div class="d-flex ms-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Push navbar content to the right -->
+                <div class="ms-auto d-flex align-items-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./engines.html">Engines</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#enquiry">Enquire</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+<section id="hero">
+    <!-- Slideshow -->
+    <div class="slideshow-containerr">
+        <div class="mySlides" style="display: block;">
+            <img src="./media/pexels-daniel-andraski-197681005-13065689.jpg" class="slide-image" alt="First Slide">
+        </div>
+        <div class="mySlides" style="display: none;">
+            <img src="./media/pexels-mikebirdy-190574 (1).jpg" class="slide-image" alt="Second Slide">
+        </div>
+        <div class="mySlides" style="display: none;">
+            <img src="./media/pexels-shvetsa-4315575.jpg" class="slide-image" alt="Third Slide">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content text-white">
+            <div class="container">
+                <h1>Find High-Performance Engines at the <span style="text-decoration: underline;">Best Prices</span></h1>
+                <div class="cta-buttons mt-4">
+                    <button class="btn btn-lg btn-outline-light mx-2">
+                        <a href="./engines.html" style="color: inherit; text-decoration: none; display: block;">Browse engines</a>
+                      </button>
+                      <button class="btn btn-lg btn-outline-light mx-2">
+                        <a href="#enquiry" style="color: inherit; text-decoration: none; display: block;">Enquire Now</a>
+                      </button>
+                      
+                </div>
+            </div>
+        </div>
+
+    </div>
+      <!-- Overlay -->
+    <div class="overlay"></div>
+</section>
+
+    <!-- About Us Section -->
+<section id="about" class="container my-5 about-us">
+    <div class="row">
+        <div class="col">
+            <h2>About Universal Auto Spares</h2>
+            <p>At <strong style="text-decoration: underline;">Universal Auto Spares</strong>, we specialize in sourcing and supplying high-quality engines for a wide range of vehicles. Our expertise lies in finding the right engine at the best price, ensuring reliability and top performance for our customers.</p>
+            <p>We work with trusted suppliers and manufacturers to offer industry-tested petrol, diesel, and high-performance engines that meet rigorous standards. Every engine is carefully inspected to guarantee durability and efficiency.</p>
+            <p>Customer satisfaction is our priority. Whether you're an individual, mechanic, or business looking for bulk orders, we provide expert advice, competitive pricing, and fast, hassle-free delivery.</p>
+            <p><strong>Why Choose Us?</strong></p>
+            <ul>
+                <li>Specialists in sourcing quality engines at competitive prices</li>
+                <li>Trusted partnerships with leading suppliers and manufacturers</li>
+                <li>Thoroughly inspected and tested engines for reliability</li>
+                <li>Fast and efficient delivery with expert customer support</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Sections -->
+
+<section id="featured" class="container my-5">
+    <h2 class="text-center mb-4">Engines</h2>
+    <div id="engineCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <!-- Engine Card 1 -->
+            <div class="carousel-item active">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Polo Vivo Engine</h5>
+                        <p class="card-text">Reliable and fuel-efficient engine for Volkswagen Polo Vivo.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Vehicle Brand:</strong> Volkswagen</li>
+                            <li><strong>Engine Fuel Type:</strong> Petrol</li>
+                            <li><strong>Engine Size:</strong> 1.4L</li>
+                            <li><strong>Engine Model:</strong> Polo Vivo</li>
+                            <li><strong>Engine Code:</strong> CLP</li>
+                        </ul>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quoteModal" onclick="prefillForm('Volkswagen Polo Vivo', 'CLP')">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engine Card 2 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Golf 7 Engine</h5>
+                        <p class="card-text">A powerful and efficient engine for the Volkswagen Golf 7.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Vehicle Brand:</strong> Volkswagen</li>
+                            <li><strong>Engine Fuel Type:</strong> Petrol</li>
+                            <li><strong>Engine Size:</strong> 2.0L</li>
+                            <li><strong>Engine Model:</strong> Golf 7</li>
+                            <li><strong>Engine Code:</strong> CHH</li>
+                        </ul>
+                        <a href="#enquiry" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quoteModal" onclick="prefillForm('Volkswagen Golf 7', 'CHH')">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engine Card 3 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Amarok Engine</h5>
+                        <p class="card-text">A durable and high-performance engine for Volkswagen Amarok.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Vehicle Brand:</strong> Volkswagen</li>
+                            <li><strong>Engine Fuel Type:</strong> Diesel</li>
+                            <li><strong>Engine Size:</strong> 3.0L V6</li>
+                            <li><strong>Engine Model:</strong> Amarok</li>
+                            <li><strong>Engine Code:</strong> DDX</li>
+                        </ul>
+                        <a href="#enquiry" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quoteModal" onclick="prefillForm('Volkswagen Amarok', 'DDX')">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engine Card 4 -->
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Tiguan Engine</h5>
+                        <p class="card-text">A compact and fuel-efficient engine for Volkswagen Tiguan.</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Vehicle Brand:</strong> Volkswagen</li>
+                            <li><strong>Engine Fuel Type:</strong> Petrol</li>
+                            <li><strong>Engine Size:</strong> 1.5L</li>
+                            <li><strong>Engine Model:</strong> Tiguan</li>
+                            <li><strong>Engine Code:</strong> DADA</li>
+                        </ul>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quoteModal" onclick="prefillForm('Volkswagen Tiguan', 'DADA')">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#engineCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#engineCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- View All Engines Button -->
+    <div class="text-center mt-4">
+        <a href="all-engines.html" class="btn btn-primary">View All Engines</a>
+    </div>
+</section>
+
+<!-- Enquiry Box -->
+<section id="enquiry" class="container my-5">
+    <h2>Can't find what you're looking for? Send us an enquiry!</h2>
+    <br/>
+    <form id="enquiryForm" action="http://localhost:3000/submit-enquiry" method="POST" novalidate>
+        <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="e.g. John Doe" required>
+            <div class="text-danger" id="nameError"></div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="e.g. johndoe@example.com" required>
+            <div class="text-danger" id="emailError"></div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" class="form-control" placeholder="e.g. 0821234567" required>
+            <div class="text-danger" id="contactError"></div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="part">Vehicle Make & Model</label>
+            <input type="text" id="part" name="part" class="form-control" placeholder="e.g. Toyota Corolla" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="model">Engine Number and Year Model</label>
+            <input type="text" id="model" name="model" class="form-control" placeholder="e.g. 2ZR-FE123456 2023" required>
+        </div>
+        <div class="mb-3">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" class="form-control" placeholder="Type any extra details here..." rows="4"></textarea>
+        </div>
+    
+        <button type="submit" class="btn" style="background-color: #001F3F; color: white;">
+            Submit
+        </button>
+    </form>
+</section>
+
+   <!-- Footer -->
+<footer class="bg-navy text-white py-4" id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Phone and Whatsapp: +27737023260</p>
+                <p>Email: contact@auto-spares.com</p>
+                <p> Midrand, Gauteng, South Africa </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="#" class="text-white">Facebook</a> | 
+                <a href="#" class="text-white">TikTok</a> | 
+                <a href="#" class="text-white">Gumtree</a>
+            </div>
+            <div class="col-md-4 text-end">
+                <p>Business Hours: Mon-Sat, 9am - 6pm</p>
+                <a href="#" class="text-white">Terms & Conditions</a> | 
+                <a href="#" class="text-white">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- WhatsApp Floating Icon -->
+    <a href="https://wa.me/27737023260" class="whatsapp-icon" target="_blank">
+        <img src="./media/icons8-whatsapp.svg" alt="WhatsApp Icon">
+    </a>
+    
+
+   <!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="quoteModalLabel">Request a Quote</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="http://localhost:3000/submit-enquiry" method="POST">
+                    <div class="mb-3">
+                        <label for="modalName">Name</label>
+                        <input type="text" id="modalName" name="name" class="form-control" placeholder="e.g. John Doe" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="modalEmail">Email</label>
+                        <input type="email" id="modalEmail" name="email" class="form-control" placeholder="e.g. johndoe@example.com" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="modalContact">Contact Number</label>
+                        <input type="tel" id="modalContact" name="contact" class="form-control" placeholder="e.g. 0821234567" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="vehicleModel">Vehicle Model</label>
+                        <input type="text" id="vehicleModel" name="model" class="form-control" placeholder="e.g. Toyota Corolla" required readonly>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="engineCode">Engine Code</label>
+                        <input type="text" id="engineCode" name="part" class="form-control" placeholder="e.g. 2ZR-FE" required readonly>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="modalDetails">Additional Details</label>
+                        <textarea id="modalDetails" name="details" class="form-control" placeholder="Describe any extra requirements or questions..." rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="background-color: #001F3F; color: white;">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
